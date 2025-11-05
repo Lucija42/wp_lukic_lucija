@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lucija Lukic">
+    <title>Zadaca 2</title>
+    <link rel="stylesheet" href="../styles.css">
+   <style>
+    h2{
+        color: plum;
+        background-color: rgb(107, 7, 69);
+    }
+    body{
+        background-color: mediumpurple;
+    }
+   </style>
+</head>
+<body>
+   <h2>Game of thrones</h2> 
+   <table border="1">
+    <tr>
+        <th>Sezone serije</th>
+        <th colspan="2">Godina izlaska sezone i trajanje snimanja sezone</th>
+    </tr>
+    <tr>
+        <th>Sezona 1</th>
+        <th>2011.</th>
+        <th>pola godine</th>
+    </tr>
+    <tr>
+        <th>Sezona 2</th>
+        <th>2012.</th>
+        <th rowspan="2"> pet mjeseci </th>
+        
+    </tr>
+    <tr>
+        <th>Sezona 3</th>
+        <th>2013.</th>
+    </tr>
+    <tr>
+        <th>Sezona 4</th>
+        <th>2014.</th>
+        <th>četiri i pol mjeseca</th>
+    </tr>
+    <tr>
+        <th>Sezona 5</th>
+        <th>2015.</th>
+        <th rowspan="2"> pet mjeseci </th>
+    </tr>
+    <tr>
+        <th>Sezona 6</th>
+        <th>2016.</th>
+    </tr>
+    <tr>
+        <th>Sezona 7</th>
+        <th>2017.</th>
+        <th>pet i pol mjeseci</th>
+    </tr>
+    <tr>
+        <th>Sezona 8</th>
+        <th>2018.</th>
+        <th>osam i pol mjeseci</th>
+    </tr>
+
+   </table>
+</body>
+<h2>Prijava:</h2>
+<form action="#" method="get">
+    <label for="ime">Unesi ime:</label>
+        <input type="text" id="ime" placeholder="Unesi ime...">
+        <br>
+        <label for="prezime">Unesi prezime:</label>
+        <input type="text" id="prezime">
+        <br>
+        <label for="pass">Unesi lozinku:</label>
+        <input type="password" name="pass" id="pass" required>
+        <br>
+        <label for="email">Unesi email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+</form>
+
+
+
+<form action="#" method="get">
+    <input type="radio" name="gender" id="Admin">
+    <label for="Admin">Admin</label>
+    <br>
+    <input type="radio" name="gender" id="Guest">
+    <label for="Guest">Guest</label>
+    <br>
+    <input type="checkbox" name="uvjeti" id="uvjeti">
+    <label for="uvjeti">Prihvaćam uvjete korištenja</label>
+    <br>
+    <input type="submit" value="Pošalji">
+    <input type="reset" value="Poništi">
+
+
+</form>
+<h2>Official trailer</h2>
+<iframe width="560" height="315" src="https://youtu.be/KPLWWIOCOOQ?si=wpYOzxOllFGFBS2x" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"allowfullscreen>
+     <title>Youtube video player</title>
+</iframe>
+<body>
+    <h2>Isječak scene</h2>
+<video width="320" height="240" controls>
+    <source src="./isjecak.mp4" type="video/mp4">
+    </video>  
+
+<h2>Audio element</h2>
+    <audio controls>
+    <source src="./game-of-thrones-399847.mp3" type="audio/ogg">
+</audio>
+</body>
+  
+</html>
