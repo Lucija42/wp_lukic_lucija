@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobna web stranica">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lucija Lukic">
+    <title>Moja web stranica</title>
+</head>
+<body>
+    <h1>Dobrodošli na moju web stranicu</h1>
+    <p>Ovo je <strong>prvi</strong> paragraf na <em>mojoj</em> web stranici.</p>
+    <p>Ovo je <em>moj</em> <strong>drugi</strong> paragraf.</p>
+    <ul>
+        <li>moj prvi kolokvij</li>
+        <li>traje sat vremena</li>
+        <li>svatko piše za sebe</li>
+        <li>nema mobitela</li>
+    </ul>
+    <h2>Kolokvij sadrži:</h2>
+    <ol>
+        <li>forme</li>
+        <li>tablice</li>
+        <li>liste</li>
+        <li>audio i video</li>
+    </ol>
+    <img src="./download.jpg" alt="slika jeseni" height="350">
+    <h3>Linkovi:</h3>
+    <a href="https://www.unisb.hr/" target="_blank">Kliknite ovdje</a>
+    <p>Stranicu Slavonskog Broda možete vidjeti ovdje:</p>
+    <a href="https://www.slavonski-brod.hr/" target="_blank">Kliknite ovdje</a>
+    <h2>Tablica</h2>
+    <table border="1">
+        <tr>
+            <th colspan="6">Time table</th>
+        </tr>
+        <tr>
+            <th rowspan="5">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>Maths</th>
+            <th>Arts</th>
+        </tr>
+        <tr>
+            <th colspan="6">Lunch</th>
+        </tr>
+        <tr>
+            <th>Science</th>
+            <th>Maths</th>
+            <th colspan="2">Science</th>
+            <th rowspan="2">Project</th>
+        </tr>
+        <tr>
+           <th>Science</th>
+           <th>Maths</th>
+           <th>Science</th>
+           <th>Maths</th>
+        </tr>
+    </table>
+    <h3>Forme u HTML-u</h3>
+    <form action="#" method="get">
+        <label for="name">Unesi ime:</label>
+        <input type="text" id="name" placeholder="Unesi ime...">
+        <br>
+         <br>
+         <label for="Employee ID">Unesi šifru:</label>
+        <input type="text" id="Employee ID">
+        <br>
+         <label for="Designation">Email adresa:</label>
+        <input type="text" id="Designation">
+        <br>
+         <br>
+        <input type="radio" name="gender" id="Male">
+        <label for="Male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="Female">
+        <label for="Female">Female</label>
+        <br>
+        <input type="submit" value="Post">
+        <input type="reset" value="Reset">
+    </form>
+    <h3>Audio element</h3>
+    <audio controls>
+    <source src="./horse.ogv" type="audio/ogg">
+    </audio>
+    <h3>Video element</h3>
+    <video controls>
+    <source src="./movie.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>

@@ -5,3 +5,11 @@ h2 {
         body {
             background-color: darkslategray;
         }
+        /* pristup preko ID-a*/
+#prvi {
+    color: aqua;
+}
+        /*pristup preko klase*/
+.drugi{
+    color: brown;
+}
