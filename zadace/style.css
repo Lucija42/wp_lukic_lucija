@@ -1,0 +1,44 @@
+body{
+    font-family: "Open sans", sans-serif;
+}
+h1, h2{
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+h2 {
+    color: #4CAF50;
+}
+.glavni-sadrzaj {
+   background-color: #ECEFF1; 
+}
+p1 {
+    font-size: 18px;
+    color: #37474F;
+}
+p2 {
+    font-size: 16px;
+    color: #546E7A;
+}
+p3 {
+    font-size: 20px;
+    color: #78909c;
+}
+li:nth-child(1) {
+    list-style-type: square;
+}
+li:nth-child(2) {
+    list-style-type: circle;
+}
+li:nth-child(3) {
+    list-style-type: disc;
+}
+.highlight {
+    color: #ffc107;
+}
+#main-title {
+    font-size: 4rem;
+}
