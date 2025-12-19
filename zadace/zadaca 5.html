@@ -21,12 +21,29 @@
             margin: 5px 0 0 0;
             font-style: italic;
         }
-        .recept{
-            border: 2px solid #333333;
-            border-radius: 8px;
+        .recept1 {
             padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            grid-column: 1;
+        }
+        .recept2 {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            grid-column: 2;
+        }
+        .recept3 {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            grid-column: 1 / span 2;
+        }
+        .recept4 {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            grid-column: 1;
         }
         .recept h2{
             font-size: 28px;
@@ -43,7 +60,42 @@
         .recept li{
             margin: 5px 0;
         }
+        .slika1 {
+            width: 100%;
+            margin-top: 20px;
 
+        }
+        .slika2 {
+            width: 100px;
+            margin-top: 20px;
+        }
+        .slika3 {
+            width: 170px;
+            margin-top: 20px;
+        }
+        .slika4 {
+            width: 90px;
+            margin-top: 20px;
+        }
+        .recepti-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+       .recept {
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+         }
+        @media (max-width: 600px) {
+            .slika1, .slika2, .slika3, .slika4 {
+                width: 100%;
+                height: auto;
+                grid-column: auto;
+            }
+        }
+        
 
     </style>
 </head>
@@ -53,34 +105,40 @@
         <p>Jednostavna jela koja volim!</p>
 
     </div>
-    <div class="recept" style="background-color: lightblue;">
+    <div class="recepti-grid">
+        <div class="recept1" style="background-color: lightblue;">
         <h2>Pasta Carbonara</h2>
+        <div class="slika1">
+            <img src="../slike/carbonara.webp" alt="Carbonara">
+        </div>
         <p>Sastojci:</p>
         <ul>
             <li>200g špageta</li>
             <li>100g pancete</li>
             <li>2 jaja</li>
             <li>50g parmezana</li>
-            <li>So i biber po ukusu</li>
+            <li>Sol i papar po ukusu</li>
         </ul>
         <p>Priprema:</p>
         <ol>
-            <li>Skuvajte špagete u slanoj vodi prema uputstvu na pakovanju.</li>
-            <li>U tiganju propržite pancetu dok ne postane hrskava.</li>
-            <li>U posebnoj posudi umutite jaja i dodajte narendani parmezan.</li>
-            <li>Ocedite špagete i pomešajte ih sa pancetom.</li>
-            <li>Skinite tiganj sa vatre i brzo umešajte smesu od jaja i parmezana kako bi se sos zgusnuo.</li>
-            <li>Začinite solju i biberom po ukusu i poslužite odmah.</li>
+            <li>Skuhajte špagete u slanoj vodi prema uputstvu na pakiranju.</li>
+            <li>U tavici propržite pancetu dok ne postane hrskava.</li>
+            <li>U posebnoj posudi umutite jaja i dodajte naribani parmezan.</li>
+            <li>Ocjedite špagete i pomješajte ih sa pancetom.</li>
+            <li>Skinite tavicu sa vatre i brzo umejšajte smjesu od jaja i parmezana kako bi se sos zgusnuo.</li>
+            <li>Začinite solju i paprom po ukusu i poslužite odmah.</li>
         </ol>
 
     </div>
-    <div class="recept" style="background-color: coral;">
+    <div class="recept2" style="background-color: coral;">
         <h2>Čokoladni kolač</h2>
-        <img src="./cokoladni_kolac.jpg" alt="Čokoladni kolač">
+        <div class="slika2">
+            <img src="../slike/Cokoladni-Kolac.png" alt="Čokoladni kolač">
+        </div>
         <p>Sastojci:</p>
         <ul>
             <li>200g tamne čokolade</li>
-            <li>150g putera</li>
+            <li>150g maslaca</li>
             <li>150g šećera</li>
             <li>3 jaja</li>
             <li>100g brašna</li>
@@ -88,18 +146,20 @@
         </ul>
         <p>Priprema:</p>
         <ol>
-            <li>Rastopite čokoladu i puter na pari.</li>
-            <li>Umutite jaja sa šećerom dok ne postanu penasta.</li>
-            <li>Dodajte rastopljenu čokoladu u smesu od jaja i dobro promešajte.</li>
-            <li>U drugoj posudi pomešajte brašno i prašak za pecivo, pa dodajte u tečnu smesu.</li>
+            <li>Rastopite čokoladu i maslac na pari.</li>
+            <li>Umutite jaja sa šećerom dok ne postanu pjenasta.</li>
+            <li>Dodajte rastopljenu čokoladu u smjesu od jaja i dobro promješajte.</li>
+            <li>U drugoj posudi pomješajte brašno i prašak za pecivo, pa dodajte u tečnu smjesu.</li>
             <li>Sve dobro sjedinite i sipajte u podmazan kalup za pečenje.</li>
-            <li>Pecite u prethodno zagrejanoj rerni na 180°C oko 25-30 minuta.</li>
-            <li>Ostavite da se ohladi pre serviranja.</li>
+            <li>Pecite u prethodno zagrijanoj rerni na 180°C oko 25-30 minuta.</li>
+            <li>Ostavite da se ohladi prije serviranja.</li>
         </ol>
     </div>
-    <div class="recept" style="background-color: lightgreen;">
+    <div class="recept3" style="background-color: lightgreen;">
         <h2>Salata od avokada i piletine</h2>
-        <img src="./salata_avokada_piletina.jpg" alt="Salata od avokada i piletine">
+        <div>
+            <img src="../slike/salata-piletina-avokado.jpg" alt="Salata od avokada i piletine">
+        </div>
         <p>Sastojci:</p>
         <ul>
             <li>2 zrela avokada</li>
@@ -107,21 +167,24 @@
             <li>1 crveni luk</li>
             <li>1 limun (sok)</li>
             <li>Maslinovo ulje</li>
-            <li>So i biber po ukusu</li>
+            <li>Sol i papar po ukusu</li>
         </ul>
         <p>Priprema:</p>
         <ol>
-            <li>Isecite avokado na kockice i stavite u veliku činiju.</li>
-            <li>Dodajte iseckanu pečenu piletinu.</li>
-            <li>Dodajte sitno iseckani crveni luk.</li>
+            <li>Isjecite avokado na kockice i stavite u veliku posudu.</li>
+            <li>Dodajte isjeckanu pečenu piletinu.</li>
+            <li>Dodajte sitno isjeckani crveni luk.</li>
             <li>Prelijte sokom od limuna i maslinovim uljem.</li>
-            <li>Začinite solju i biberom po ukusu i sve dobro promešajte.</li>
-            <li>Poslužite odmah ili ostavite u frižideru da se ohladi pre serviranja.</li>
+            <li>Začinite solju i paprom po ukusu i sve dobro promješajte.</li>
+            <li>Poslužite odmah ili ostavite u hladnjaku da se ohladi prije serviranja.</li>
         </ol>
 
     </div>
-    <div class="recept" style="background-color: lightyellow;">
+    <div class="recept4" style="background-color: lightyellow;">
         <h2>Pečeni losos sa povrćem</h2>
+        <div class="slika4">
+            <img src="../slike/losos-pecen.jpg" alt="Pečeni losos sa povrćem">
+        </div>
         <p>Sastojci:</p>
         <ul>
             <li>2 fileta lososa</li>
@@ -129,19 +192,20 @@
             <li>1 crvena paprika</li>
             <li>1 crveni luk</li>
             <li>Maslinovo ulje</li>
-            <li>So, biber i začinsko bilje po ukusu</li>
+            <li>Sol, papar i začinsko bilje po ukusu</li>
         </ul>
         <p>Priprema:</p>
         <ol>
-            <li>Rernu zagrejte na 200°C.</li>
-            <li>Isecite tikvicu, papriku i crveni luk na veće komade.</li>
-            <li>U pleh stavite povrće, začinite solju, biberom i začinskim biljem, pa prelijte maslinovim uljem.</li>
+            <li>Rernu zagrijte na 200°C.</li>
+            <li>Isjecite tikvicu, papriku i crveni luk na veće komade.</li>
+            <li>U pleh stavite povrće, začinite solju, paprom i začinskim biljem, pa prelijte maslinovim uljem.</li>
             <li>Pored povrća stavite filete lososa, začinite ih i njih maslinovim uljem.</li>
             <li>Pecite u rerni oko 20-25 minuta dok losos ne postane mekan i povrće pečeno.</li>
             <li>Poslužite toplo uz omiljeni prilog.</li>
         </ol>
 
     </div>
-
+    </div>
+    
 </body>
 </html>
