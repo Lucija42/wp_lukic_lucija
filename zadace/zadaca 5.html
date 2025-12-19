@@ -1,443 +1,147 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Moji omiljeni recepti</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadaca 5</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .naslov{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .naslov h1{
+            font-size: 36px;
+            margin: 0;
+        }
+        .naslov p{
+            font-size: 20px;
+            margin: 5px 0 0 0;
+            font-style: italic;
+        }
+        .recept{
+            border: 2px solid #333333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .recept h2{
+            font-size: 28px;
+            margin-top: 0;
+        }
+        .recept p{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .recept ul, .recept ol{
+            margin: 10px 0 10px 20px;
+            font-size: 16px;
+        }
+        .recept li{
+            margin: 5px 0;
+        }
+
+
+    </style>
 </head>
-
 <body>
-<header id="top" class="header">
-<h1>Moji omiljeni recepti</h1>
-<p>Jednostavna jela koja volim!</p>
+    <div class="naslov">
+        <h1>Moji omiljeni recepti</h1>
+        <p>Jednostavna jela koja volim!</p>
 
-<nav class="nav">
-<a href="#predjelo">Predjelo</a>
-<a href="#glavno">Glavno jelo</a>
-<a href="#desert">Desert</a>
-<a href="#grid">Grid</a>
-</nav>
-</header>
+    </div>
+    <div class="recept" style="background-color: lightblue;">
+        <h2>Pasta Carbonara</h2>
+        <p>Sastojci:</p>
+        <ul>
+            <li>200g špageta</li>
+            <li>100g pancete</li>
+            <li>2 jaja</li>
+            <li>50g parmezana</li>
+            <li>So i biber po ukusu</li>
+        </ul>
+        <p>Priprema:</p>
+        <ol>
+            <li>Skuvajte špagete u slanoj vodi prema uputstvu na pakovanju.</li>
+            <li>U tiganju propržite pancetu dok ne postane hrskava.</li>
+            <li>U posebnoj posudi umutite jaja i dodajte narendani parmezan.</li>
+            <li>Ocedite špagete i pomešajte ih sa pancetom.</li>
+            <li>Skinite tiganj sa vatre i brzo umešajte smesu od jaja i parmezana kako bi se sos zgusnuo.</li>
+            <li>Začinite solju i biberom po ukusu i poslužite odmah.</li>
+        </ol>
 
-<main class="container">
+    </div>
+    <div class="recept" style="background-color: coral;">
+        <h2>Čokoladni kolač</h2>
+        <img src="./cokoladni_kolac.jpg" alt="Čokoladni kolač">
+        <p>Sastojci:</p>
+        <ul>
+            <li>200g tamne čokolade</li>
+            <li>150g putera</li>
+            <li>150g šećera</li>
+            <li>3 jaja</li>
+            <li>100g brašna</li>
+            <li>1 kašičica praška za pecivo</li>
+        </ul>
+        <p>Priprema:</p>
+        <ol>
+            <li>Rastopite čokoladu i puter na pari.</li>
+            <li>Umutite jaja sa šećerom dok ne postanu penasta.</li>
+            <li>Dodajte rastopljenu čokoladu u smesu od jaja i dobro promešajte.</li>
+            <li>U drugoj posudi pomešajte brašno i prašak za pecivo, pa dodajte u tečnu smesu.</li>
+            <li>Sve dobro sjedinite i sipajte u podmazan kalup za pečenje.</li>
+            <li>Pecite u prethodno zagrejanoj rerni na 180°C oko 25-30 minuta.</li>
+            <li>Ostavite da se ohladi pre serviranja.</li>
+        </ol>
+    </div>
+    <div class="recept" style="background-color: lightgreen;">
+        <h2>Salata od avokada i piletine</h2>
+        <img src="./salata_avokada_piletina.jpg" alt="Salata od avokada i piletine">
+        <p>Sastojci:</p>
+        <ul>
+            <li>2 zrela avokada</li>
+            <li>200g pečene piletine</li>
+            <li>1 crveni luk</li>
+            <li>1 limun (sok)</li>
+            <li>Maslinovo ulje</li>
+            <li>So i biber po ukusu</li>
+        </ul>
+        <p>Priprema:</p>
+        <ol>
+            <li>Isecite avokado na kockice i stavite u veliku činiju.</li>
+            <li>Dodajte iseckanu pečenu piletinu.</li>
+            <li>Dodajte sitno iseckani crveni luk.</li>
+            <li>Prelijte sokom od limuna i maslinovim uljem.</li>
+            <li>Začinite solju i biberom po ukusu i sve dobro promešajte.</li>
+            <li>Poslužite odmah ili ostavite u frižideru da se ohladi pre serviranja.</li>
+        </ol>
 
-<!-- PREDJELO -->
-<section id="predjelo" class="section">
-<h2 class="section-title">Predjelo</h2>
+    </div>
+    <div class="recept" style="background-color: lightyellow;">
+        <h2>Pečeni losos sa povrćem</h2>
+        <p>Sastojci:</p>
+        <ul>
+            <li>2 fileta lososa</li>
+            <li>1 tikvica</li>
+            <li>1 crvena paprika</li>
+            <li>1 crveni luk</li>
+            <li>Maslinovo ulje</li>
+            <li>So, biber i začinsko bilje po ukusu</li>
+        </ul>
+        <p>Priprema:</p>
+        <ol>
+            <li>Rernu zagrejte na 200°C.</li>
+            <li>Isecite tikvicu, papriku i crveni luk na veće komade.</li>
+            <li>U pleh stavite povrće, začinite solju, biberom i začinskim biljem, pa prelijte maslinovim uljem.</li>
+            <li>Pored povrća stavite filete lososa, začinite ih i njih maslinovim uljem.</li>
+            <li>Pecite u rerni oko 20-25 minuta dok losos ne postane mekan i povrće pečeno.</li>
+            <li>Poslužite toplo uz omiljeni prilog.</li>
+        </ol>
 
-<article class="recipe">
-<img
-class="recipe-img"
-src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=60"
-alt="Bruschette s rajčicom"
-/>
+    </div>
 
-<div class="recipe-text">
-<h3>Bruschette s rajčicom</h3>
-<p class="desc">Hrskavi kruh, svježa rajčica i bosiljak – gotovo za 10 minuta.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>6 kriški kruha (baget ili tost)</li>
-<li>2 veće rajčice</li>
-<li>1 režanj češnjaka</li>
-<li>2 žlice maslinovog ulja</li>
-<li>svježi bosiljak</li>
-<li>sol i papar</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Kruh kratko prepeci u tavi ili pećnici.</li>
-<li>Utrljaj češnjak po toplom kruhu.</li>
-<li>Nasjeckaj rajčice, dodaj ulje, sol, papar i bosiljak.</li>
-<li>Stavi smjesu na kruh i posluži.</li>
-</ol>
-</div>
-</article>
-</section>
-
-<!-- GLAVNO JELO -->
-<section id="glavno" class="section">
-<h2 class="section-title">Glavno jelo</h2>
-
-<div class="two-col">
-<article class="recipe card">
-<img
-class="recipe-img small"
-src="https://images.unsplash.com/photo-1604908176997-125f25cc500f?auto=format&fit=crop&w=1200&q=60"
-alt="Piletina u umaku od vrhnja"
-/>
-
-<div class="recipe-text">
-<h3>Piletina u umaku od vrhnja</h3>
-<p class="desc">Kremasto, brzo i zasitno — super uz rižu ili tjesteninu.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>400 g pilećih prsa</li>
-<li>200 ml vrhnja za kuhanje</li>
-<li>1 manji luk</li>
-<li>1 žlica maslaca ili ulja</li>
-<li>sol, papar</li>
-<li>malo peršina (po želji)</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Nareži piletinu na trakice, posoli i popapri.</li>
-<li>Na maslacu popirjaj luk pa dodaj piletinu.</li>
-<li>Kad piletina porumeni, ulij vrhnje i kuhaj 5–7 min.</li>
-<li>Pospi peršinom i posluži.</li>
-</ol>
-</div>
-</article>
-
-<article class="recipe card">
-<img
-class="recipe-img small"
-src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1200&q=60"
-alt="Rižoto s povrćem"
-/>
-
-<div class="recipe-text">
-<h3>Rižoto s povrćem</h3>
-<p class="desc">Jedan lonac, puno okusa — i lako se prilagodi što imaš u frižideru.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>250 g riže (arborio ili obična)</li>
-<li>1 mrkva</li>
-<li>1 tikvica</li>
-<li>1/2 crvene paprike</li>
-<li>700 ml temeljca ili vode</li>
-<li>2 žlice maslinovog ulja</li>
-<li>sol, papar</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Povrće nareži na kockice i kratko poprži na ulju.</li>
-<li>Dodaj rižu i miješaj 1 min.</li>
-<li>Postupno dodavaj temeljac/vodu i kuhaj dok riža ne omekša.</li>
-<li>Začini i posluži.</li>
-</ol>
-</div>
-</article>
-</div>
-</section>
-
-<!-- DESERT -->
-<section id="desert" class="section">
-<h2 class="section-title">Desert</h2>
-
-<article class="recipe">
-<img
-class="recipe-img"
-src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=1200&q=60"
-alt="Zobene kuglice s kakaom"
-/>
-
-<div class="recipe-text">
-<h3>Zobene kuglice s kakaom (bez pečenja)</h3>
-<p class="desc">Desert za 15 minuta — samo pomiješaš, oblikuješ i ohladiš.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>200 g zobenih pahuljica</li>
-<li>2 žlice kakaa</li>
-<li>3–4 žlice meda ili šećera (po ukusu)</li>
-<li>80 g maslaca</li>
-<li>2–3 žlice mlijeka</li>
-<li>kokos (za uvaljati)</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Otopi maslac pa dodaj kakao, med i mlijeko.</li>
-<li>Umiješaj zobene pahuljice.</li>
-<li>Oblikuj kuglice i uvaljaj u kokos.</li>
-<li>Ohladi 30 min u frižideru.</li>
-</ol>
-</div>
-</article>
-</section>
-
-<!-- GRID NA KRAJU (kao u uputama) -->
-<section id="grid" class="section">
-<h2 class="section-title">Grid (A / B / C)</h2>
-
-<div class="layout-grid">
-<div class="box a">A</div>
-<div class="box b">B</div>
-<div class="box c">C</div>
-</div>
-</section>
-
-</main>
 </body>
 </html>
-<style>
-    <!DOCTYPE html>
-<html lang="hr">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Moji omiljeni recepti</title>
-<link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-<header id="top" class="header">
-<h1>Moji omiljeni recepti</h1>
-<p>Jednostavna jela koja volim!</p>
-
-<nav class="nav">
-<a href="#predjelo">Predjelo</a>
-<a href="#glavno">Glavno jelo</a>
-<a href="#desert">Desert</a>
-<a href="#grid">Grid</a>
-</nav>
-</header>
-
-<main class="container">
-
-<!-- PREDJELO -->
-<section id="predjelo" class="section">
-<h2 class="section-title">Predjelo</h2>
-
-<article class="recipe">
-<img
-class="recipe-img"
-src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=60"
-alt="Bruschette s rajčicom"
-/>
-
-<div class="recipe-text">
-<h3>Bruschette s rajčicom</h3>
-<p class="desc">Hrskavi kruh, svježa rajčica i bosiljak – gotovo za 10 minuta.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>6 kriški kruha (baget ili tost)</li>
-<li>2 veće rajčice</li>
-<li>1 režanj češnjaka</li>
-<li>2 žlice maslinovog ulja</li>
-<li>svježi bosiljak</li>
-<li>sol i papar</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Kruh kratko prepeci u tavi ili pećnici.</li>
-<li>Utrljaj češnjak po toplom kruhu.</li>
-<li>Nasjeckaj rajčice, dodaj ulje, sol, papar i bosiljak.</li>
-<li>Stavi smjesu na kruh i posluži.</li>
-</ol>
-</div>
-</article>
-</section>
-
-<!-- GLAVNO JELO -->
-<section id="glavno" class="section">
-<h2 class="section-title">Glavno jelo</h2>
-
-<div class="two-col">
-<article class="recipe card">
-<img
-class="recipe-img small"
-src="https://images.unsplash.com/photo-1604908176997-125f25cc500f?auto=format&fit=crop&w=1200&q=60"
-alt="Piletina u umaku od vrhnja"
-/>
-
-<div class="recipe-text">
-<h3>Piletina u umaku od vrhnja</h3>
-<p class="desc">Kremasto, brzo i zasitno — super uz rižu ili tjesteninu.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>400 g pilećih prsa</li>
-<li>200 ml vrhnja za kuhanje</li>
-<li>1 manji luk</li>
-<li>1 žlica maslaca ili ulja</li>
-<li>sol, papar</li>
-<li>malo peršina (po želji)</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Nareži piletinu na trakice, posoli i popapri.</li>
-<li>Na maslacu popirjaj luk pa dodaj piletinu.</li>
-<li>Kad piletina porumeni, ulij vrhnje i kuhaj 5–7 min.</li>
-<li>Pospi peršinom i posluži.</li>
-</ol>
-</div>
-</article>
-
-<article class="recipe card">
-<img
-class="recipe-img small"
-src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1200&q=60"
-alt="Rižoto s povrćem"
-/>
-
-<div class="recipe-text">
-<h3>Rižoto s povrćem</h3>
-<p class="desc">Jedan lonac, puno okusa — i lako se prilagodi što imaš u frižideru.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>250 g riže (arborio ili obična)</li>
-<li>1 mrkva</li>
-<li>1 tikvica</li>
-<li>1/2 crvene paprike</li>
-<li>700 ml temeljca ili vode</li>
-<li>2 žlice maslinovog ulja</li>
-<li>sol, papar</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Povrće nareži na kockice i kratko poprži na ulju.</li>
-<li>Dodaj rižu i miješaj 1 min.</li>
-<li>Postupno dodavaj temeljac/vodu i kuhaj dok riža ne omekša.</li>
-<li>Začini i posluži.</li>
-</ol>
-</div>
-</article>
-</div>
-</section>
-
-<!-- DESERT -->
-<section id="desert" class="section">
-<h2 class="section-title">Desert</h2>
-
-<article class="recipe">
-<img
-class="recipe-img"
-src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=1200&q=60"
-alt="Zobene kuglice s kakaom"
-/>
-
-<div class="recipe-text">
-<h3>Zobene kuglice s kakaom (bez pečenja)</h3>
-<p class="desc">Desert za 15 minuta — samo pomiješaš, oblikuješ i ohladiš.</p>
-
-<h4>Potrebni sastojci:</h4>
-<ul>
-<li>200 g zobenih pahuljica</li>
-<li>2 žlice kakaa</li>
-<li>3–4 žlice meda ili šećera (po ukusu)</li>
-<li>80 g maslaca</li>
-<li>2–3 žlice mlijeka</li>
-<li>kokos (za uvaljati)</li>
-</ul>
-
-<h4>Priprema:</h4>
-<ol>
-<li>Otopi maslac pa dodaj kakao, med i mlijeko.</li>
-<li>Umiješaj zobene pahuljice.</li>
-<li>Oblikuj kuglice i uvaljaj u kokos.</li>
-<li>Ohladi 30 min u frižideru.</li>
-</ol>
-</div>
-</article>
-</section>
-
-<!-- GRID NA KRAJU (kao u uputama) -->
-<section id="grid" class="section">
-<h2 class="section-title">Grid (A / B / C)</h2>
-
-<div class="layout-grid">
-<div class="box a">A</div>
-<div class="box b">B</div>
-<div class="box c">C</div>
-</div>
-</section>
-
-</main>
-section {
-max-width: 1000px;
-margin: 40px auto;
-padding: 0 20px;
-}
-
-article {
-display: flex;
-gap: 20px;
-background-color: #ffffff;
-padding: 20px;
-margin-bottom: 30px;
-border: 1px solid #ccc;
-border-radius: 10px;
-}
-
-/* SLIKA */
-article img {
-width: 40%;
-max-width: 400px;
-border-radius: 8px;
-object-fit: cover;
-}
-
-/* TEKST */
-article div,
-article section,
-article .tekst {
-width: 60%;
-}
-
-/* NASLOVI */
-h2, h3 {
-margin-top: 0;
-}
-
-/* LISTE */
-ul, ol {
-padding-left: 20px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-article {
-flex-direction: column;
-}
-
-article img,
-article div {
-width: 100%;
-}
-}
-.grid {
-display: grid;
-grid-template-columns: 2fr 1fr;
-grid-template-areas:
-"a a"
-"b c";
-gap: 10px;
-}
-
-.a { grid-area: a; background: #ffe0b3; }
-.b { grid-area: b; background: #d6f5d6; }
-.c { grid-area: c; background: #d6e0f5; }
-
-.box {
-padding: 20px;
-border: 1px solid #999;
-text-align: center;
-}
-
-/* MOBITEL */
-@media (max-width: 480px) {
-.grid {
-grid-template-columns: 1fr;
-grid-template-areas:
-"a"
-"b"
-"c";
-}
-}
-</body>
-</html>
-</style>
