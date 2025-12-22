@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. kolokvij</title>
+    <style>
+        .zastava.Belgije {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            border: 2px solid #000;
+        }
+
+        .crta {
+            flex: 1;
+        }
+
+        .crna {
+            background-color: black;
+        }
+
+        .zuta {
+            background-color: yellow;
+        }
+
+        .crvena {
+            background-color: red;
+        }
+        .grid.container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .item{
+            background-color: lightgray;
+            border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            border: 1px solid #000;
+            padding: 15px;
+            margin: 10px;
+        }
+        .paragraf {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .klasa.1 {
+            text-decoration: none
+            color: blue;
+        }
+        .klasa.2 {
+            color: green;
+        }
+        .klasa.3 {
+            font style: italic;
+            color: red;
+        }
+        #font {
+            font-family: Arial, sans-serif;
+            margin: 15px 0;
+            padding: 20px;
+        }
+        #size {
+            font-size: 24px;
+            margin: 15px 0;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="zastava Belgije">
+        <div class="crta crna"></div>
+        <div class="crta zuta"></div>
+        <div class="crta crvena"></div>
+
+    </div>
+    <div class="grid container">
+        <div class="item">grid 1</div>
+        <div class="item">grid 2</div>
+        <div class="item">grid 3</div>
+        <div class="item">grid 4</div>
+        <div class="item">grid 5</div>
+        <div class="item">grid 6</div>
+        <div class="item">grid 7</div>
+        <div class="item">grid 8</div>
+        <div class="item">grid 9</div>
+        <div class="item">grid 10</div>
+        <div class="item">grid 11</div>
+        <div class="item">grid 12</div>
+        <div class="item">grid 13</div>
+        <div class="item">grid 14</div>
+        <div class="item">grid 15</div>
+        <div class="item">grid 16</div>
+    </div>
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
+    <div class="box">box 4</div>
+
+    <div class="paragraf">
+        <div class="klasa 1" style="background-color: blueviolet;">
+        <p>This is a sample paragraph to demonstrate text content on the page.</p>
+        </div>
+        <div class="klasa 2" style="background-color: limegreen;">
+            <p>this is a second paragraph</p>
+        </div>
+        <div class="klasa 3" style="background-color: orchid;">
+            <p>this is a third paragraph</p>
+        </div>
+    </div>
+    <p id="font">Font</p>
+    <p id="size">Velicina slova</p>
+
+  <script src="./index.js"></script>  
+</body>
+</html>
